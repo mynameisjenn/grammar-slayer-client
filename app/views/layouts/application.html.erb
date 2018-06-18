@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GrammarSlayerClient</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+  </head>
+
+  <body>
+  <a href="/signup">Sign Up</a>
+  <a href="/client/game_plays">Leader Board</a>
+  <a href="/users">Profiles</a>
+
+    <% flash.each do |name, message| %>
+      <%= message %>
+    <% end %>
+
+    <%= yield %>
+  </body>
+</html>

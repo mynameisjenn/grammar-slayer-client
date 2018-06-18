@@ -1,0 +1,10 @@
+<h3>Users</h3>
+
+  <% @users.each do |user| %>
+  <h4><a href="/users/<%= user["id"] %>">Username: <%= user["username"] %></a> </h4>
+  <h4>City: <%= user["city"] %> </h4>
+  <h4>State: <%= user["state"] %> </h4>
+  <h4>Mini_bio: <%= user["mini_bio"] %> </h4>
+  <h4>Age: <%= user["age"] %> </h4>
+  <br>
+<% end %>

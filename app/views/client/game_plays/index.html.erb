@@ -1,0 +1,7 @@
+<h3>High Scores</h3>
+
+  <% @game_plays.each do |game_play| %>
+  <h4><a href="/users/<%= game_play["user_id"] %>">User ID: <%= game_play["user_id"] %></a> </h4>
+  <h4>Score: <%= game_play["score"] %> </h4>
+  <br>
+<% end %>

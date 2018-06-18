@@ -1,0 +1,23 @@
+<h3>Create a Profile</h3>
+
+<%= form_tag '/users', method: :post do  %>
+  <div>
+    Pick a Username: <input type="text" name="username">
+  </div>
+  <div>
+    Name: <input type="text" name="name">
+  </div>
+  <div>
+    City: <input type="text" name="city">
+  </div>
+  <div>
+    State: <input type="text" name="state">
+  </div>
+  <div>
+    Mini Bio: <input type="text" name="mini_bio">
+  </div>
+  <div>
+    Age: <input type="text" name="age">
+  </div>
+  <input type="submit" value="Submit">
+<% end %>
